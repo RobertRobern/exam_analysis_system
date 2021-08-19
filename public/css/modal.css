@@ -1,0 +1,63 @@
+.modal-top{
+    /* top: 90px !important; */
+    left: 20px !important;
+}
+
+.modal-top-lg{
+    /* top: 80px !important; */
+    left: 20px !important;
+}
+
+.modal-top-xl{
+    top: 50px !important;
+    left: 200px !important;
+    width: 80% !important;
+}
+
+.space{
+    margin: 2px;
+}
+
+#inputdisplay{
+    border-style: hidden;
+    background-color: white;
+}
+
+/* menu */
+/*
+#menu ul li.active {
+    background: #910000;
+    color:#FFFFFF;
+}
+#menu ul {
+    margin: 0;
+    padding: 25px 0 0 20px;
+    list-style: none;
+    line-height: normal;
+}
+#menu li {
+    display: block;
+    float: left;
+    background: black;
+}
+#menu a {
+    display: block;
+    float: left;
+    margin-right: 17px;
+    padding: 5px 8px;
+    text-decoration: none;
+    font: 20px Georgia, "Times New Roman", Times, serif;
+    color: #FFFFFF;
+}
+#menu a:hover {
+    text-decoration: underline;
+    background: #910000;
+    color:#FFFFFF;
+}
+#menu a:active {
+    background: #910000;
+    color:black;
+} */
+
+/* end of menu */
+
