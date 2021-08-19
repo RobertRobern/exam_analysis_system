@@ -62,6 +62,14 @@
                                             <input name="gradeName" type="text" class="form-control"
                                                 placeholder="Enter Grade Name" required>
                                         </div>
+                                        <div class="form-group">
+                                            <label>Exam Name</label>
+                                            <select name="examId" class="form-control">
+                                                @foreach ($exams as $exam)
+                                                <option value="{{ $exam->id }}" selected>{{ $exam->name }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
                                     </div>
 
                                     <!-- /.card-body -->
@@ -122,7 +130,7 @@
                                     <i class="fas fa-edit"></i>
                                 </a>
                                 <a href="/delete-grade/{{$grade->id}}" class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="top" title="Delete Grade">
-                                    <i class="fas fa-trash-alt"></i> 
+                                    <i class="fas fa-trash-alt"></i>
                                 </a>
 
                             </td>

@@ -41,7 +41,7 @@
     </div><!-- /.container-fluid -->
 
     <!-- modal-gradescale -->
-    <div class="modal fade modal-top-lg" id="modal-gradescale">
+    <div class="modal fade modal-top-lg" id="modal-gradescale" data-backdrop="static">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <form action="{{ route('gradescale.save')}}" method="POST">
@@ -56,13 +56,11 @@
                     </div>
                     <div class="modal-body">
                         <!-- <p>One fine body&hellip;</p> -->
-
                         <!-- Main content -->
                         <section class="content">
                             <div class="container-fluid">
                                 <!-- general form elements -->
                                 <div class="card card-primary">
-
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col-md-6">
@@ -106,7 +104,6 @@
                             </div><!-- /.container-fluid -->
                         </section>
                         <!-- /.content -->
-
                     </div>
                     <div class="modal-footer justify-content-between">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -122,52 +119,9 @@
 </section>
 <!-- /.content -->
 
-<!-- Testing passing of data from controller -->
-<?php
-// var_dump($grade);
-// foreach($grade as $eachGrade)
-// {
-//     // echo $eachGrade->grade_name_id;
-//     $collection = collect([$eachGrade->grade_name]);
-//     $count = $collection->count();
-//     dd($collection);
-//     // ddd($eachGrade);
-
-// }
-// $collection = collect(['category', 'php']);
-//     $count = $collection->count();
-//     ddd($collection);
-//     // dd($count);
-
-
-
-// // var_dump($grade_mappings);
-
-// foreach($grade_mappings as $grademap)
-// {
-
-//     $collection = collect([$grademap->grade_name]);
-//     $count = $collection->count();
-//     dd($count);
-//     // echo $eachGradeMap->letter_grade;
-// }
-// use App\Models\GradeMapping;
-// $grademap_arr = GradeMapping::all();
-// $countby = $grademap_arr->pluck('grade_name_id')->countBy();
-// dd($countby);
-// foreach ($countby as $key => $value) {
-//     # code...
-//     echo $key->$value;
-//     // dd($key->$value);
-// }
-
-
-?>
-
 <!-- Main content -->
 <section class="content">
     <div class="container-fluid">
-
         <div class="card">
             <div class="card-header">
                 <h3 class="card-title">List of Grade Scale ({{$grades->name}})</h3>
@@ -196,7 +150,6 @@
                                 <a class="btn-primary btn-xs space" href="/edit-gradescale/{{$grades->id}}/{{ $gradescale->id}}">
                                     <i class="fas fa-edit"></i>
                                 </a>
-
                                 <a class="btn-danger btn-xs space" href="/delete-gradescale/{{ $gradescale->id}}">
                                     <i class="fas fa-trash-alt"></i>
                                 </a>

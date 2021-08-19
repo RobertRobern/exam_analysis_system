@@ -12,7 +12,7 @@ class GradeScaleController extends Controller
     public function index(){
         // $guardians = Guardian::with('students')->get();
         // dd($guardians);
-        $gradescales = GradeScale::with('grade')->orderBy('letter_grade', 'ASC')->get();
+        $gradescales = GradeScale::with('grade')->orderBy('max_mark', 'ASC')->get();
 
         return view('gradescale', compact('gradescales'));
     }

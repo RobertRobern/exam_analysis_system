@@ -18,13 +18,6 @@
     </div><!-- /.container-fluid -->
 </section>
 
-<?php
-// foreach ($classes as $class) {
-//     dump($class->id);
-// }
-
-?>
-
 <!-- Modal -->
 <!-- Main content -->
 <section class="content">
@@ -47,7 +40,7 @@
     </div><!-- /.container-fluid -->
 
     <!-- modal-sessiontype -->
-    <div class="modal fade modal-top" id="modal-sessiontype">
+    <div class="modal fade modal-top" id="modal-sessiontype" data-backdrop="static">
         <div class="modal-dialog">
             <div class="modal-content">
                 <form action="{{route('sessiontype.save')}}" method="POST">
@@ -64,12 +57,7 @@
                         <!-- Main content -->
                         <section class="content">
                             <div class="container-fluid">
-
-                                <!-- general form elements -->
                                 <div class="card card-primary">
-
-                                    <!-- form start -->
-                                    <!-- <form> -->
                                     <div class="card-body">
 
                                         <div class="form-group">
@@ -81,16 +69,11 @@
 
                                     </div>
                                     <!-- /.card-body -->
-
-                                    <!-- </form> -->
                                 </div>
                                 <!-- /.card -->
-
-
                             </div><!-- /.container-fluid -->
                         </section>
                         <!-- /.content -->
-
                     </div>
                     <div class="modal-footer justify-content-between">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -110,7 +93,6 @@
 <!-- Main content -->
 <section class="content">
     <div class="container-fluid">
-
         <div class="card">
             <div class="card-header">
                 <h3 class="card-title">Cohort Sessions</h3>

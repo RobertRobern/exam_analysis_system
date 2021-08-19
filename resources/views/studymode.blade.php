@@ -25,20 +25,15 @@
             <div class="col-md-12">
                 <div class="card card-primary card-outline">
                     <div class="card-header">
-
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-studymode">
                             Study Mode
                         </button>
                         <a href="{{ route('classes')}}"><button type="button" class="btn btn-primary">
                                 Classes
                         </button></a>
-
                     </div>
-
                     <!-- /.card -->
                 </div>
-
-
             </div>
             <!-- /.col -->
         </div>
@@ -46,7 +41,7 @@
     </div><!-- /.container-fluid -->
 
     <!-- modal-stream -->
-    <div class="modal fade modal-top" id="modal-studymode">
+    <div class="modal fade modal-top" id="modal-studymode" data-backdrop="static">
         <div class="modal-dialog">
             <div class="modal-content">
                 <form action="{{ route('studymode.save')}}" method="POST">
@@ -59,18 +54,12 @@
                     </div>
                     <div class="modal-body">
                         <!-- <p>One fine body&hellip;</p> -->
-
                         <!-- Main content -->
                         <section class="content">
                             <div class="container-fluid">
-
                                 <!-- general form elements -->
                                 <div class="card card-primary">
-
-                                    <!-- form start -->
-                                    <!-- <form> -->
                                     <div class="card-body">
-
                                         <div class="form-group">
                                             <label for="studyMode">Study Mode Name</label>
                                             <input name="studyMode" type="text" class="@error('studyMode')
@@ -78,8 +67,6 @@
                                             @enderror form-control" placeholder="Enter Study Mode Name">
                                         </div>
                                     </div>
-                                    <!-- /.card-body -->
-                                    <!-- </form> -->
                                 </div>
                                 <!-- /.card -->
                             </div><!-- /.container-fluid -->
@@ -105,7 +92,6 @@
 <!-- Main content -->
 <section class="content">
     <div class="container-fluid">
-
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
@@ -152,7 +138,6 @@
                 </div>
                 <!-- /.card -->
             </div>
-
     </div>
 </section>
 
