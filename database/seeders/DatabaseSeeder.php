@@ -12,6 +12,8 @@ use App\Models\CohortSession;
 use App\Models\Exam;
 use App\Models\Grade;
 use App\Models\GradeScale;
+use App\Models\Permission;
+use App\Models\Role;
 use App\Models\SessionType;
 use \App\Models\Year;
 use \App\Models\Stream;
@@ -32,12 +34,14 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
 
         // Add truncate to prevent exception from duplicate data
+        // Permission::truncate();
         User::truncate();
         // School::truncate();
         // Guardian::truncate();
         // Student::truncate();
 
-
+        Permission::factory(4)->create();
+        Role::factory(4)->create();
         $user = User::factory(2)->create();
 
         $school = School::create([
