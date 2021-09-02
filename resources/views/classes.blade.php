@@ -274,6 +274,24 @@
     </div>
 </section>
 
+<table>
+    <thead>
+        <tr>
+            <th>stream</th>
+            <th>class</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach ($innerJoin as $item)
+        <tr>
+            <th>{{$item->streamname}}</th>
+            <th>{{$item->classname}}</th>
+        </tr>
+        @endforeach
+
+    </tbody>
+</table>
+
 @push('script')
 <script>
 $(function() {

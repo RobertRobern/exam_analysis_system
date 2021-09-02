@@ -23,7 +23,7 @@ class CreateClassesTable extends Migration
             $table->foreign('cohort_session_id')->references('id')->on('cohort_sessions')->onDelete('cascade')->onUpdate('cascade');
             $table->unsignedBigInteger('study_mode_id');
             $table->foreign('study_mode_id')->references('id')->on('study_modes')->onDelete('cascade')->onUpdate('cascade');
-            $table->string('name')->unique();
+            $table->string('name');
             $table->date('start_date');
             $table->date('end_date');
             $table->text('notes')->nullable();
